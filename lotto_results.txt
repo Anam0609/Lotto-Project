@@ -1,0 +1,7 @@
+Player name: Anam
+Player age: 24
+Category: None
+Your numbers: [3, 6, 12, 19, 28, 45]
+Winning numbers: [2, 8, 24, 31, 37, 48]
+Unfortunately you didn't win any prize, better luck next time
+
