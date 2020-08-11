@@ -11,8 +11,8 @@ from doctest import *
 def write_to_file(name, age_years, correct_num, my_numbers, lotto_numbers):
     # write these to a file
     with open("lotto_results.txt", "a+") as file:
-        file.write("Player name: " + str(name) + "\n")
-        file.write("Player age: " + str(age_years) + "\n")
+        file.write("Player's name: " + str(name) + "\n")
+        file.write("Player's age: " + str(age_years) + "\n")
         # check if user falls under the categories
         if correct_num > 1:
             cat = correct_num
@@ -115,12 +115,14 @@ if start_game == True:
     if correct_num > 1:
         # get the correct prize accordingly
         prize = check_prize(correct_num)
-        print("You won R" + str(prize) + " congratulation!")
+        print("You won R" + str(prizes) + " congratulation!")
     else:
         # printed when the player has lost or only got 1 correct answer!
         print("Unfortunately you didn't win any prize, better luck next time")
         # Automatically prints results to the lotto_results.txt
-    print("Your results has been printed to file")
+    print("Your results has been printed to file" + "\n")
+    input("Press ENTER to exit")
+    quit()
 else:
     # prints when there's an error
     print("The game did't start")

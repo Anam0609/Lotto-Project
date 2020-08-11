@@ -30,7 +30,9 @@ except Exception as e:
 else:
     # this will only execute when there are no errors
     if age_years < 18:
-        print("You are not in within he legal age of playing!")
+        print("You are not within the legal age of playing!" + "\n")
+        input('Press Enter to Exit')
+        quit()
     else:
         # setting the start_game variable as true will make the game play
         start_game = True
